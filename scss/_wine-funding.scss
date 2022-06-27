@@ -1,0 +1,92 @@
+#wine-funding {
+
+    padding-block: 2rem;
+
+    h2 ~ a{
+        display: block;
+        margin-bottom: 1rem;
+        color: $color-blue-light;
+    }
+
+    h3 {
+        margin-bottom: .75rem;
+    }
+
+    p {
+        margin-bottom: .75rem;
+    }
+
+    .wine {
+        display: flex;
+        padding: 2.5rem;
+        border-radius: 10px;
+        gap: 1.5rem;
+        
+        background: linear-gradient(to right, #1c314d 25%, transparent 80%), url(../assets/winefunding_background.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        color: $color-light;
+
+        @include mobile {
+            background: linear-gradient(to right, #1c314d 25%, rgba(#1c314d,.75)), url(../assets/winefunding_background.jpg);
+            background-size: cover;
+            background-position: bottom right;
+            background-repeat: no-repeat;
+        }
+
+        &-texto {
+            width: 100%;
+            max-width: 550px;
+        }
+
+        figure {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            padding-top: 1rem;
+
+            @include mobile {
+                gap: 1rem;
+                flex-direction: column;
+            }
+        }
+
+        legend {
+            padding-left: 2rem;
+            font-size: .9rem;
+            position: relative;
+
+            @include mobile {
+                text-align: center;
+                padding: 0;
+            }
+
+            br {
+                @include mobile {
+                    display: none;
+                }
+            }
+
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0; top: 0; bottom: 0;
+                display: block;
+                width: 1px;
+                height: 100%;
+                background: $color-light;
+
+                @include mobile {
+                    display: none;
+                }
+            }
+        }
+
+        img {
+            width: 225px;
+            height: auto;
+        }
+    }
+}

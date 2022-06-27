@@ -1,0 +1,68 @@
+#quem-somos {
+    padding-block: 2rem;
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+
+        &::after {
+            content: '';
+            display: block;
+            height: 4px;
+            background-color: $color-blue;
+            width: 150px;
+        }
+    }
+
+    p {
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+        margin-bottom: 1rem;
+        
+        i {
+            color: $color-blue;
+        }
+    }
+
+    @include mobile {
+        .row {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+.quem-somos-mosaico {
+    display: grid;
+    grid-template-areas: "A A"
+                         "B C";
+    grid-template-rows: 60% 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding-right: 1.5rem;
+
+    @include mobile {
+        width: 100%;
+        padding: 0;
+        padding-bottom: 2rem;
+    }
+
+    &-a, &-b, &-c {
+        border-radius: 8px;
+    }
+
+    &-a {
+        grid-area: A;
+        object-fit: cover;
+    }
+    &-b {
+        grid-area: B;
+        object-fit: cover;
+    }
+    &-c {
+        grid-area: C;
+        object-fit: cover;
+    }
+}

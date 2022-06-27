@@ -1,0 +1,218 @@
+@charset "utf8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap');
+
+
+// Variáveis
+$color-dark: #333;
+$color-light: #F8F9FA;
+$color-blue: #0096C7;
+$color-blue-light: #1BBAFF;
+$color-gray: #C4C4C4;
+$color-wine: #931B24;
+
+
+// Mixins
+
+@mixin mobile {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+
+// Imports
+
+@import "header";
+@import "hero";
+@import "quem-somos";
+@import "fundador";
+@import "servicos";
+@import "projetos";
+@import "wine-funding";
+@import "parceiros";
+@import "contato";
+@import "mapa";
+@import "footer";
+
+
+// Reset
+
+:root {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    // border: .5px solid red;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.4;
+    color: $color-dark;
+    background: $color-light;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+
+    @include mobile {
+        padding-inline: 1rem;
+    }
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.col {
+    flex: 1;
+}
+
+.botao {
+    display: inline-block;
+    font-size: .9rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    line-height: 1.4;
+    text-transform: uppercase;
+    border: none;
+    padding: .5rem .75rem;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+
+    &:not(:last-child) {
+        margin-right: .5rem
+    }
+
+    &-principal {
+        background-color: $color-blue-light;
+        color: $color-light;
+        box-shadow: 0 5px 0 $color-blue;
+
+        i {
+            color: $color-dark;
+        }
+
+        &:active {
+            box-shadow: none;
+            transform: translateY(5px);
+        }
+
+        &:hover {
+            background-color: lighten($color-blue-light, 10%);
+            color: #fff;
+        }
+    }
+
+    &-secundario {
+        background-color: #fff;
+        box-shadow: 0 5px 0 $color-gray;
+        color: $color-dark;
+
+        i {
+            color: $color-blue-light;
+        }
+
+        &:active {
+            box-shadow: none;
+            transform: translateY(5px);
+        }
+
+        &:hover {
+            color: lighten($color-dark, 20%);
+        }
+    }
+
+    &-alternativo {
+        background-color: lighten($color-dark, 15%);
+        box-shadow: 0 5px 0 $color-dark;
+        color: $color-light;
+
+        i {
+            color: $color-blue-light;
+        }
+
+        &:active {
+            box-shadow: none;
+            transform: translateY(5px);
+        }
+
+        &:hover {
+            color: lighten($color-dark, 20%);
+        }
+    }
+}
+
+
+
+// animations
+
+.to-reveal {
+    opacity: 0;
+}
+
+@keyframes fromtop {
+    0% {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fromleft {
+    0% {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes frombottom {
+    0% {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

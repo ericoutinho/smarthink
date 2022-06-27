@@ -1,0 +1,54 @@
+#projetos {
+    padding-block: 2rem;
+
+    h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: $color-blue;
+
+        &::after {
+            content: '';
+            display: block;
+            height: 3px;
+            background-color: $color-gray;
+            width: 100px;
+        }
+    }
+
+    p {
+        margin-bottom: 1rem;
+    }
+}
+
+.projeto {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    @include mobile {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    &-texto {
+
+        p {
+            max-width: 50ch;
+        }
+
+        @include mobile {
+            order: 2;
+        }
+
+    }
+
+    &-imagem {
+        flex: 0 0 275px;
+
+        @include mobile {
+            order: 1;
+            max-width: 255px;
+        }
+
+    }
+}

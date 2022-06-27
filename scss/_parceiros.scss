@@ -1,0 +1,41 @@
+#parceiros {
+    padding-block: 2rem;
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        line-height: 1.1;
+
+        &::after {
+            content: '';
+            display: block;
+            height: 4px;
+            background-color: $color-blue;
+            width: 150px;
+            margin-top: .5rem;
+        }
+    }
+}
+
+.parceiros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+    .parceiro {
+        flex: 0 0 175px;
+
+        img {
+            filter: grayscale(1);
+            opacity: .6;
+            transition: all .2s;
+
+            &:hover {
+                filter: grayscale(0);
+                opacity: 1;
+            }
+        }
+    }
+}

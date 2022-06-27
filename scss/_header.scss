@@ -1,0 +1,71 @@
+header {
+    padding-block: .5rem;
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &-brand {
+        width: 160px;
+        height: auto;
+    }
+
+    &-button {
+        display: none;
+        place-content: center;
+        border: 1px solid $color-dark;
+        padding: .4rem .65rem .45rem;
+        border-radius: 4px;
+        background-color: $color-light;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: all .2s;
+
+        &:hover {
+            color: $color-blue-light;
+        }
+
+        @include mobile {
+            display: grid;
+        }
+    }
+
+    &-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+
+        @include mobile {
+            display: none;
+            width: 100%;
+            flex-direction: column;
+            padding-block: 2rem;
+
+            &.active {
+                display: flex;
+            }
+        }
+
+        a {
+            display: block;
+            transition: all .2s;
+        }
+
+        a:hover {
+            color: $color-blue;
+        }
+
+        &-social {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            font-size: 1.25rem;
+        }
+    }
+
+}

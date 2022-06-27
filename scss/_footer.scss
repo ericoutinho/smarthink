@@ -1,0 +1,26 @@
+footer {
+    padding-block: .75rem;
+    background-color: $color-dark;
+    color: $color-light;
+    font-size: .9rem;
+
+    @include mobile {
+        padding-block: 2rem .75rem;
+    }
+
+    .row {
+        @include mobile {
+            flex-direction: column;
+        }
+    }
+
+    span {
+        color: $color-blue-light;
+    }
+
+    img {
+        float: right;
+        width: 130px;
+        height: auto;
+    }
+}

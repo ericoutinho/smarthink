@@ -1,0 +1,93 @@
+#fundador {
+
+    padding-block: 2rem;
+    background: url(../assets/smarthink_bg_dark.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $color-light;
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+}
+
+.founder {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+
+    @include mobile {
+        flex-direction: column;
+    }
+
+    &-profile {
+        flex: 1 0 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 100%;
+            max-width: 200px;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            background-color: #888;
+            object-fit: cover;
+            margin-bottom: .75rem;
+        }
+
+        &-name {
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        &-legend {
+            font-size: .85rem;
+        }
+
+        &-social {
+            display: flex;
+            align-items: center;
+            gap: .75rem;
+            font-size: 1.25rem;
+            position: relative;
+            padding-top: 1rem;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: .5rem;
+                left: 50%;
+                transform: translateX(-50%);
+                display: block;
+                width: 75%;
+                border-top: 1px solid $color-blue;
+                margin: 0 auto;
+            }
+
+            a {
+                transition: all .2s;
+    
+                &:hover {
+                    color: $color-blue-light;
+                }
+            }
+        }
+    }
+
+    &-text {
+        font-size: .9rem;
+        column-count: auto;
+        column-width: 300px;
+        column-gap: 1.75rem;
+        column-fill: balance;
+        column-rule: 1px solid #444;
+
+        p {
+            margin-bottom: .75rem;
+            break-before: avoid;
+        }
+    }
+
+}
