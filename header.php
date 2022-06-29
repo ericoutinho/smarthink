@@ -41,7 +41,7 @@
     <meta property="twitter:image" content="<?= get_template_directory_uri(); ?>/assets/smarthink-meta-1200x628.jpg">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/styles/main.css">
+    <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/styles/main.css?v=<?=wp_get_theme()->get('Version')?>">
     <script src="<?= get_template_directory_uri(); ?>/scripts/main.js" defer></script>
 
     <?php wp_head(); ?>
@@ -52,7 +52,7 @@
     <header id="home">
         <div class="container">
             <nav class="menu">
-                <img class="menu-brand" src="<?= get_template_directory_uri(); ?>/assets/Smarthink_logo.svg" alt="">
+                <img class="menu-brand" src="<?= get_template_directory_uri(); ?>/assets/Smarthink_logo.svg" alt="Logomarca Smarthink">
                 <button class="menu-button"><i class="fa-solid fa-bars"></i></button>
                 <ul class="menu-links">
                     <li><a href="#home">Início</a></li>
@@ -64,10 +64,10 @@
 
                     <li>
                         <ul class="menu-links-social">
-                            <li><a target="_blank" href="https://www.instagram.com/smarthink.tec"><i class="fab fa-instagram"></i></a></li>
-                            <li><a target="_blank" href="https://www.facebook.com/smarthink.tec "><i class="fab fa-facebook"></i></a></li>
-                            <li><a target="_blank" href="https://www.youtube.com/channel/UCJQ4xwDNZ24_eMX_RVq1cCg"><i class="fab fa-youtube"></i></a></li>
-                            <li><a target="_blank" href="#"><i class="fab fa-whatsapp"></i></a></li>
+                            <li><a target="_blank" aria-label="Instagram" href="https://www.instagram.com/smarthink.tec"><i class="fab fa-instagram"></i></a></li>
+                            <li><a target="_blank" aria-label="Facebook" href="https://www.facebook.com/smarthink.tec "><i class="fab fa-facebook"></i></a></li>
+                            <li><a target="_blank" aria-label="Youtube" href="https://www.youtube.com/channel/UCJQ4xwDNZ24_eMX_RVq1cCg"><i class="fab fa-youtube"></i></a></li>
+                            <li><a target="_blank" aria-label="Whatsapp" href="https://wa.me/5527992688664"><i class="fab fa-whatsapp"></i></a></li>
                         </ul>
                     </li>
                 </ul>

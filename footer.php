@@ -20,7 +20,7 @@
                     <span>Smarthink</span> &copy; 2022 &bullet; Todos os diretos reservados
                 </div>
                 <div class="col">
-                    <img src="<?= get_template_directory_uri(); ?>/assets/Smarthink_logo_branca.svg" alt="Smarthink">
+                    <img src="<?= get_template_directory_uri(); ?>/assets/Smarthink_logo_branca.svg" alt="Logomarca da Smarthink">
                 </div>
             </div>
         </div>

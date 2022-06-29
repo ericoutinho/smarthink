@@ -32,7 +32,7 @@
                             <a href="#projetos" class="botao botao-secundario">Nossos projetos <i class="fas fa-caret-right"></i></a>
                         </div>
                         <div class="slider-item-imagem">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/slider_mulher_laptop.png" alt="">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/slider_mulher_laptop.png" alt="Mulher com laptop">
                         </div>
                     </div>
                     <!-- SLIDER ITEM -->
@@ -45,7 +45,7 @@
                             <a href="#servicos" class="botao botao-principal">Nossos serviços <i class="fas fa-caret-right"></i></a>
                         </div>
                         <div class="slider-item-imagem">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/slider_homen_office.png" alt="">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/slider_homen_office.png" alt="Homem executivo">
                         </div>
                     </div>
                     <!-- SLIDER ITEM -->
@@ -57,7 +57,7 @@
                             <a href="#contato" class="botao botao-alternativo">Fale conosco <i class="fas fa-caret-right"></i></a>
                         </div>
                         <div class="slider-item-imagem">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/slider_couple_fistbump.png" alt="">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/slider_couple_fistbump.png" alt="Amigas se cumprimentando">
                         </div>
                     </div>
 
@@ -77,9 +77,9 @@
             <div class="row">
                 <div class="col">
                     <div class="quem-somos-mosaico">
-                        <img src="<?= get_template_directory_uri(); ?>/assets/smarthink_quemsomos_a.webp" alt="" class="quem-somos-mosaico-a to-reveal" data-animation="fromtop" data-delay="0s">
-                        <img src="<?= get_template_directory_uri(); ?>/assets/smarthink_quemsomos_b.webp" alt="" class="quem-somos-mosaico-b to-reveal" data-animation="fromleft" data-delay=".5s">
-                        <img src="<?= get_template_directory_uri(); ?>/assets/smarthink_quemsomos_c.webp" alt="" class="quem-somos-mosaico-c to-reveal" data-animation="frombottom" data-delay="1s">
+                        <img src="<?= get_template_directory_uri(); ?>/assets/smarthink_quemsomos_a.webp" alt="Close de mãos escrevendo" class="quem-somos-mosaico-a to-reveal" data-animation="fromtop" data-delay="0s">
+                        <img src="<?= get_template_directory_uri(); ?>/assets/smarthink_quemsomos_b.webp" alt="Mural de planejamento" class="quem-somos-mosaico-b to-reveal" data-animation="fromleft" data-delay=".5s">
+                        <img src="<?= get_template_directory_uri(); ?>/assets/smarthink_quemsomos_c.webp" alt="Homem e mulher utilizando laptop" class="quem-somos-mosaico-c to-reveal" data-animation="frombottom" data-delay="1s">
                     </div>
                 </div>
                 <div class="col">
@@ -103,13 +103,13 @@
         <div class="container">
             <div class="founder">
                 <div class="founder-profile to-reveal">
-                    <img src="<?= get_template_directory_uri(); ?>/assets/pablo-oliveira-fundador.jpg" alt="">
+                    <img src="<?= get_template_directory_uri(); ?>/assets/pablo-oliveira-fundador.jpg" alt="Fundador sentado em uma poltrona">
                     <p class="founder-profile-name">Pablo Oliveira</p>
                     <p class="founder-profile-legend">Fundador da Smarthink</p>
                     <ul class="founder-profile-social">
-                        <li><a target="_blank" href="https://www.linkedin.com/in/pablo-magalhaes0906/"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a target="_blank" href="mailto:po@smarthink.tec.br"><i class="fas fa-envelope"></i></a></li>
-                        <li><a target="_blank" href="https://wa.me/5527992688664"><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a target="_blank" aria-label="Linkedin" href="https://www.linkedin.com/in/pablo-magalhaes0906/"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a target="_blank" aria-label="Email" href="mailto:po@smarthink.tec.br"><i class="fas fa-envelope"></i></a></li>
+                        <li><a target="_blank" aria-label="Whatsapp" href="https://wa.me/5527992688664"><i class="fab fa-whatsapp"></i></a></li>
                     </ul>
                 </div>
                 <div class="founder-text">
@@ -129,23 +129,23 @@
             <p>A <strong>Smarthink</strong> oferece uma gama diversificada de serviços voltados para<br/>o fomento e o crescimento da sua Startup.</p>
             <div class="servicos">
                 <div class="servicos-item to-reveal" data-delay="0s">
-                    <img src="<?= get_template_directory_uri(); ?>/assets/servicos_projetos.svg" alt="">
+                    <img src="<?= get_template_directory_uri(); ?>/assets/servicos_projetos.svg" alt="Foguete subindo junto a um gráfico">
                     Elaboração de projetos para submissão a<br/>editais de fomento
                 </div>
                 <div class="servicos-item to-reveal" data-delay=".25s">
-                    <img src="<?= get_template_directory_uri(); ?>/assets/servicos_captacao.svg" alt="">
+                    <img src="<?= get_template_directory_uri(); ?>/assets/servicos_captacao.svg" alt="Lâmpada com um cifrão dentro">
                     Captação de investimentos a<br/>fundo perdido
                 </div>
                 <div class="servicos-item to-reveal" data-delay=".5s">
-                    <img src="<?= get_template_directory_uri(); ?>/assets/servicos_mentoria.svg" alt="">
+                    <img src="<?= get_template_directory_uri(); ?>/assets/servicos_mentoria.svg" alt="Rosto de perfil com uma engrenagem">
                     Mentoria para<br/>Startups
                 </div>
                 <div class="servicos-item to-reveal" data-delay=".75s">
-                    <img src="<?= get_template_directory_uri(); ?>/assets/servicos_businessplan.svg" alt="">
+                    <img src="<?= get_template_directory_uri(); ?>/assets/servicos_businessplan.svg" alt="Balão de fala com gráfico">
                     Elaboração de<br/>Business Plan
                 </div>
                 <div class="servicos-item to-reveal" data-delay="1s">
-                    <img src="<?= get_template_directory_uri(); ?>/assets/servicos_cordenacao.svg" alt="">
+                    <img src="<?= get_template_directory_uri(); ?>/assets/servicos_cordenacao.svg" alt="Uma lâmpada entre duas pessoas">
                     Gerenciamento e coordenação de<br/>projetos de inovação
                 </div>
             </div>
@@ -162,13 +162,13 @@
                     <p>Nós podemos ajudar a tirar suas idéias do papel. Vamos conversar e construir caminhos que podem se transformar em uma grande parceria de sucesso.</p>
                 </div>
                 <div class="projeto-imagem to-reveal" data-animation="fromleft">
-                    <img src="<?= get_template_directory_uri(); ?>/assets/projetos_ideia.svg" alt="">
+                    <img src="<?= get_template_directory_uri(); ?>/assets/projetos_ideia.svg" alt="Desenho, quatro pessoas discutindo uma ideia">
                 </div>
             </div>
 
             <div class="projeto">
                 <div class="projeto-imagem to-reveal" data-animation="fromleft">
-                    <img src="<?= get_template_directory_uri(); ?>/assets/projetos_novos.svg" alt="">
+                    <img src="<?= get_template_directory_uri(); ?>/assets/projetos_novos.svg" alt="Desenho, dois homens se cumprimentando frente a um quebra-cabeças">
                 </div>
                 <div class="projeto-texto">
                     <h3>Em novos Projetos</h3>
@@ -182,13 +182,13 @@
                     <p>Se você tem um produto desenvolvido e precisa de uma parceria comercial para ampliar sua inserção no mercado, podemos te ajudar nesse caminho. Prestamos consultoria para criação de network comercial, plano de negócios ou inserimos teu produto em nosso portfólio.</p>
                 </div>
                 <div class="projeto-imagem to-reveal" data-animation="fromleft">
-                    <img src="<?= get_template_directory_uri(); ?>/assets/projeto_comercial.svg" alt="">
+                    <img src="<?= get_template_directory_uri(); ?>/assets/projeto_comercial.svg" alt="Desenho, homem apresenta gráfico para outros colaboradores">
                 </div>
             </div>
 
             <div class="projeto">
                 <div class="projeto-imagem to-reveal" data-animation="fromleft">
-                    <img src="<?= get_template_directory_uri(); ?>/assets/projetos_desenvolvimento.svg" alt="">
+                    <img src="<?= get_template_directory_uri(); ?>/assets/projetos_desenvolvimento.svg" alt="Desenho, homens examinam gráfico de pizza com uma lupa">
                 </div>
                 <div class="projeto-texto">
                     <h3>No Desenvolvimento</h3>
@@ -209,7 +209,7 @@
                     <p>Aqui você poderá investir na produção de um vinho de uma vinícola brasileira, entrar numa campanha para adquirir coletivamente vinhos de vinícolas boutiques de vários países do Mundo que não são vendidos no Brasil, participar de um grupo para ter uma experiência exclusiva de enoturismo e até ser investidor de uma vinícola brasileira. Tudo isso forma prática e segura.</p>
                     <p><strong>Em breve, disponível para acesso!</strong></p>
                     <figure>
-                        <img src="<?= get_template_directory_uri(); ?>/assets/winefunding_logo_branca.svg" alt="">
+                        <img src="<?= get_template_directory_uri(); ?>/assets/winefunding_logo_branca.svg" alt="Logomarca da Winefunding">
                         <legend>O <strong>financiamento<br/>coletivo</strong> com corpo, <br/>aroma e acidez.</legend>
                     </figure>
                 </div>
@@ -225,22 +225,22 @@
             <div class="parceiros">
                 <div class="parceiro to-reveal" data-delay="0s">
                     <a href="https://base27.com.br" target="_blank">
-                        <img src="<?= get_template_directory_uri(); ?>/assets/parceiros_base27.png" alt="">
+                        <img src="<?= get_template_directory_uri(); ?>/assets/parceiros_base27.png" alt="Logomarca da Base27">
                     </a>
                 </div>
                 <div class="parceiro to-reveal" data-delay=".25s">
                     <a href="https://base27.com.br/startups" target="_blank">
-                        <img src="<?= get_template_directory_uri(); ?>/assets/parceiros_area9.png" alt="">
+                        <img src="<?= get_template_directory_uri(); ?>/assets/parceiros_area9.png" alt="Logomarca da Área 9">
                     </a>
                 </div>
                 <div class="parceiro to-reveal" data-delay=".75s">
                     <a href="https://fapes.es.gov.br" target="_blank">
-                        <img src="<?= get_template_directory_uri(); ?>/assets/parceiros_fapes.png" alt="">
+                        <img src="<?= get_template_directory_uri(); ?>/assets/parceiros_fapes.png" alt="Logomarca da FAPES">
                     </a>
                 </div>
                 <div class="parceiro to-reveal" data-delay="1s">
                     <a href="https://itrois.com.br" target="_blank">
-                        <img src="<?= get_template_directory_uri(); ?>/assets/parceiros_itrois.png" alt="">
+                        <img src="<?= get_template_directory_uri(); ?>/assets/parceiros_itrois.png" alt="Logomarca da ITrois">
                     </a>
                 </div>
             </div>
@@ -272,10 +272,10 @@
                     <h3>Conecte-se conosco:</h3>
                     <p>Fique sempre por dentro das novidades que a<br/>Smarthink prepara para você.</p>
                     <ul class="contato-social">
-                        <li><a target="_blank" href="https://www.instagram.com/smarthink.tec"><i class="fab fa-instagram"></i></a></li>
-                        <li><a target="_blank" href="https://www.facebook.com/smarthink.tec "><i class="fab fa-facebook"></i></a></li>
-                        <li><a target="_blank" href="https://www.youtube.com/channel/UCJQ4xwDNZ24_eMX_RVq1cCg"><i class="fab fa-youtube"></i></a></li>
-                        <li><a target="_blank" href="#"><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a target="_blank" aria-label="Instagram" href="https://www.instagram.com/smarthink.tec"><i class="fab fa-instagram"></i></a></li>
+                        <li><a target="_blank" aria-label="Facebook" href="https://www.facebook.com/smarthink.tec "><i class="fab fa-facebook"></i></a></li>
+                        <li><a target="_blank" aria-label="Youtube" href="https://www.youtube.com/channel/UCJQ4xwDNZ24_eMX_RVq1cCg"><i class="fab fa-youtube"></i></a></li>
+                        <li><a target="_blank" aria-label="Whatsapp" href="https://wa.me/5527992688664"><i class="fab fa-whatsapp"></i></a></li>
                     </ul>
                 </div>
 
@@ -321,7 +321,7 @@
     </section>
 
     <section id="mapa">
-        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3741.2143050673494!2d-40.293553678957174!3d-20.332763611311965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb83dc6a182eea7%3A0x2e2d9579be99a320!2sCentro%20de%20Vila%20Velha%2C%20Vila%20Velha%20-%20ES!5e0!3m2!1spt-BR!2sbr!4v1656348869979!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe title="Nossa localização no Google Maps" class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3741.2143050673494!2d-40.293553678957174!3d-20.332763611311965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb83dc6a182eea7%3A0x2e2d9579be99a320!2sCentro%20de%20Vila%20Velha%2C%20Vila%20Velha%20-%20ES!5e0!3m2!1spt-BR!2sbr!4v1656348869979!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
 

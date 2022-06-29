@@ -22,7 +22,7 @@
     }
 
     &-profile {
-        flex: 1 0 200px;
+        flex: 0 0 200px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -32,7 +32,6 @@
             max-width: 200px;
             aspect-ratio: 1/1;
             border-radius: 50%;
-            background-color: #888;
             object-fit: cover;
             margin-bottom: .75rem;
         }
@@ -77,6 +76,7 @@
     }
 
     &-text {
+        flex: 1;
         font-size: .9rem;
         column-count: auto;
         column-width: 300px;
@@ -84,7 +84,7 @@
         column-fill: balance;
         column-rule: 1px solid #444;
 
-        p {
+        p:not(:last-child) {
             margin-bottom: .75rem;
             break-before: avoid;
         }
